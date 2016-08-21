@@ -1,14 +1,14 @@
 {
-  "name": "github-card",
-  "version": "1.2.1",
-  "description": "A widget showing your github details that you can easily embed in your portfolio website.",
+  "name": "react-github-card",
+  "version": "0.1",
+  "description": "A react widget showing your github details that you can easily embed in your portfolio website.",
   "main": "widget.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/surbhioberoi/github-widget.git"
+    "url": "git+ssh://git@github.com/schaab/github-widget.git"
   },
   "keywords": [
     "github",
@@ -17,10 +17,10 @@
     "widget",
     "embed"
   ],
-  "author": "Surbhi Oberoi <mail@surbhioberoi.com> (http://surbhioberoi.com/)",
+  "author": "Jared Schaab <jared.schaab@gmail.com> (http://jaredschaab.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/surbhioberoi/github-widget/issues"
+    "url": "https://github.com/schaab/github-widget/issues"
   },
-  "homepage": "https://surbhioberoi.github.io/github-widget"
+  "homepage": "https://schaab.github.io/github-widget"
 }
