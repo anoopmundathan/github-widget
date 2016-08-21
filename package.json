@@ -3,9 +3,7 @@
   "version": "0.1",
   "description": "A react widget showing your github details that you can easily embed in your portfolio website.",
   "main": "widget.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/schaab/github-widget.git"
@@ -22,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/schaab/github-widget/issues"
   },
-  "homepage": "https://schaab.github.io/github-widget"
+  "homepage": "https://schaab.github.io/github-widget",
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2"
+  }
 }
