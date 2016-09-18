@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$blue: #4078C0;
+$white: #ddd;
+$charcoal: #333;
+$font-family: 'Roboto',sans-serif;
+
+.github-widget{
+  border:1px solid #DDD;
+  max-width:350px;
+  margin: auto;
+  font-family: $font-family;
+
+  // Containers
+  .gh-widget-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content:center;
+    color:$charcoal;
+  }
+
+  .gh-widget-stats {
+    @extend .gh-widget-container;
+
+    .count {
+      display: block;
+      font-size: 1.2em;
+      font-weight: 700;
+      color:$blue;
+    }
+  }
+
+  // item
+  .gh-widget-item{
+    flex:1;
+    text-align:center;
+    padding:10px;
+  }
+
+  .gh-widget-photo{
+    @extend  .gh-widget-item;
+    flex:2;
+
+    img{
+      border-radius:100%;
+      max-width:90px;
+    }
+  }
+
+  .gh-widget-personal-details{
+    @extend .gh-widget-item;
+    flex:6;
+
+    .bio{
+      color:$blue;
+      display: block;
+    }
+
+    .full-name{
+      font-size:1.5em;
+      line-height:1.5em;
+      display: block;
+    }
+
+    .location{
+      font-size:.8em;
+      display: block;
+    }
+  }
+
+  .gh-widget-heading{
+    @extend .gh-widget-item;
+
+    font-weight:400;
+    color:darken($charcoal, 20%);
+  }
+
+  // repositories
+  .gh-widget-repositories{
+    .name{
+      @extend .gh-widget-item;
+
+      flex:2;
+      text-align:left;
+
+      div {
+        padding:5px 0;
+        text-overflow:ellipsis;
+      }
+    }
+
+    .language {
+      @extend .gh-widget-item;
+
+      text-align:left;
+      div{
+        padding:5px 0;
+      }
+    }
+
+    .stars{
+      @extend .gh-widget-item;
+
+      div{
+        padding:5px 0;
+      }
+    }
+
+  }
+
+  .gh-widget-link{
+    text-decoration:none;
+    color:$blue;
+
+    &hover{
+      text-decoration:none;
+    }
+  }
+
+  .gh-widget-follow{
+    @extend .gh-widget-item;
+
+    flex:2;
+
+    button{
+      width:100%;
+      height:2em;
+      border:none;
+      background:$white;
+    }
+  }
+
+  .gh-widget-active-time{
+    @extend .gh-widget-item;
+
+    flex:4;
+    font-size:.8em;
+  }
+
+  .gh-widget-hr{
+    border:1px solid $white;
+  }
+
+}
+

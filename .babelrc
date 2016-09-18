@@ -1,0 +1,4 @@
+{
+  "plugins": ["syntax-class-properties", "transform-class-properties", "react-hot-loader/babel"],
+  "presets": ["stage-0", "airbnb"]
+}
