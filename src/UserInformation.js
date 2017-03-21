@@ -26,4 +26,10 @@ UserInformation.propTypes = {
   location: PropTypes.string,
 };
 
+UserInformation.defaultProps = {
+  name: 'John Doe',
+  bio: 'I do not exist',
+  location: 'Nowheresville',
+};
+
 export default UserInformation;

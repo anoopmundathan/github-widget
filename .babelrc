@@ -1,4 +1,11 @@
 {
   "plugins": ["syntax-class-properties", "transform-class-properties", "react-hot-loader/babel"],
-  "presets": ["stage-0", "airbnb"]
+  "presets": ["stage-0", "airbnb"],
+  "env": {
+    "test": {
+      "plugins": [
+        "rewire"
+      ]
+    }
+  }
 }

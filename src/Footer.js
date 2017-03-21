@@ -13,7 +13,7 @@ const Footer = ({ userUrl = '', lastActiveDate = {} }) => (
     </div>
     <div className="gh-widget-active-time">
       <span>
-        {`Last active: ${moment(lastActiveDate).fromNow()}`}
+        {`Last active: ${lastActiveDate.fromNow()}`}
       </span>
     </div>
   </div>
@@ -22,7 +22,12 @@ const Footer = ({ userUrl = '', lastActiveDate = {} }) => (
 
 Footer.propTypes = {
   userUrl: PropTypes.string,
-  lastActiveDate: PropTypes.object,
+  lastActiveDate: PropTypes.instanceOf(moment),
+};
+
+Footer.defaultProps = {
+  userUrl: '#',
+  lastActiveDate: moment(),
 };
 
 export default Footer;

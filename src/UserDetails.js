@@ -27,4 +27,12 @@ UserDetails.propTypes = {
   location: PropTypes.string,
 };
 
+UserDetails.defaultProps = {
+  imageUrl: '',
+  username: 'JohnDoe',
+  name: 'John Doe',
+  bio: 'Who am I?',
+  location: 'Nowheresville',
+};
+
 export default UserDetails;

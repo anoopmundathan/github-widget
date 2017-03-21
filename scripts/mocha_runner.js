@@ -1,3 +1,5 @@
+require('babel-core/register')();
+require('babel-polyfill');
 var jsdom = require('jsdom').jsdom;
 
 var exposedProperties = ['window', 'navigator', 'document'];
@@ -16,6 +18,3 @@ global.navigator = {
 };
 
 documentRef = document;
-
-require('babel-core/register');
-require('babel-polyfill');

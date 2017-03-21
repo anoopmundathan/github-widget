@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 const baseUserUrl = 'https://api.github.com/users/';
 
-const get = (url) => (
+const get = url => (
   // Return a new promise.
   new Promise((resolve, reject) => {
     // Do the usual XHR stuff
@@ -63,7 +63,7 @@ class GithubWidget extends Component {
   componentDidMount() {
     const { username } = this.props;
 
-    get(`${baseUserUrl}${username}`).then(response => {
+    get(`${baseUserUrl}${username}`).then((response) => {
       const userDetails = JSON.parse(response);
       this.setState({
         ...this.state,
@@ -71,7 +71,7 @@ class GithubWidget extends Component {
       });
 
       return get(userDetails.repos_url);
-    }).then(response => {
+    }).then((response) => {
       const userRepos = JSON.parse(response);
       this.setState({
         ...this.state,
