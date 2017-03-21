@@ -11,7 +11,7 @@ const Repositories = ({ repositories = [], top }) => {
     .map(repo =>
       (<Repository
         key={repo.id}
-        url={repo.url}
+        url={repo.html_url}
         name={repo.name}
         language={repo.language}
         stars={repo.stargazers_count}
@@ -31,8 +31,19 @@ const Repositories = ({ repositories = [], top }) => {
 };
 
 Repositories.propTypes = {
-  repositories: PropTypes.array,
+  repositories: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    html_url: PropTypes.string,
+    name: PropTypes.string,
+    language: PropTypes.string,
+    stargazers_count: PropTypes.number,
+  })),
   top: PropTypes.number,
+};
+
+Repositories.defaultProps = {
+  repositories: [],
+  top: 0,
 };
 
 export default Repositories;

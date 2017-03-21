@@ -23,4 +23,10 @@ UserStats.propTypes = {
   repositories: PropTypes.number,
 };
 
+UserStats.defaultProps = {
+  followers: 0,
+  following: 0,
+  repositories: 0,
+};
+
 export default UserStats;

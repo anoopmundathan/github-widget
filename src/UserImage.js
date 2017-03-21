@@ -11,4 +11,9 @@ UserImage.propTypes = {
   altText: PropTypes.string,
 };
 
+UserImage.defaultProps = {
+  imageSource: '',
+  altText: 'No image',
+};
+
 export default UserImage;
